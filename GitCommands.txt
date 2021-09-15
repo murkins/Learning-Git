@@ -1,0 +1,27 @@
+git init
+git add TextFile.txt
+git commit -m "first commit"
+git remote add origin https://github.com/murkins/Learning-Git.git
+git branch -M main
+git push -u origin main
+git status
+git checkout -b develop
+git checkout -b develop1
+git add TextFile.txt
+git commit -m "added first line"
+git push -u origin develop1
+git checkout develop
+git push -u origin develop
+git clone https://github.com/murkins/Learning-Git.git
+git checkout develop
+git checkout -b develop2
+git add TextFile.txt
+git commit -m "First commit in branch develop2"
+git push -u origin develop2
+git checkout develop
+git merge origin/develop1
+git push -u origin develop
+git merge origin/develop2
+git add TextFile.txt
+git commit -m "Merged conflict in TextFile.txt"
+git push -u origin develop
